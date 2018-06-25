@@ -26,7 +26,7 @@ class ProductSection extends React.Component {
               product. Keep you user engaged by providing meaningful
               information. Remember that by this time, the user is curious,
               otherwise he wouldn't scroll to get here. Add a button if you want
-              the user to see more.
+              the user to see morea.
             </h5>
           </GridItem>
         </GridContainer>
