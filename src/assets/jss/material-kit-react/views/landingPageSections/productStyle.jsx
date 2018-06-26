@@ -12,8 +12,19 @@ const productStyle = {
     minHeight: "32px",
     textDecoration: "none"
   },
+  titleCurriculum :{
+    ...title,
+    marginTop: "5px",
+    minHeight: "32px",
+    textDecoration: "none"
+  },
+  subtitleCurriculum :{
+    ...title,
+    color : '#999',
+    textDecoration: "none"
+  },
   description: {
-    color: "#999"
+    color: "#38383A"
   }
 };
 

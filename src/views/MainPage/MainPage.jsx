@@ -33,6 +33,7 @@ import work5 from "assets/img/examples/clem-onojegaw.jpg";
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 
 import FeriadosSection from './Sections/FeriadosSection.jsx';
+import CurriculumSection from './Sections/CurriculumSection.jsx';
 
 class ProfilePage extends React.Component {
   render() {
@@ -80,9 +81,7 @@ class ProfilePage extends React.Component {
                     </div>
                   </div>
                 </GridItem>
-              </GridContainer>
 
-              <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8} className={classes.navWrapper} >
                   <div className={classes.description}>
                     <p>
@@ -95,8 +94,11 @@ class ProfilePage extends React.Component {
                     </p>
                   </div>
                 </GridItem>
+
+                <CurriculumSection/>
+                <FeriadosSection/>
               </GridContainer>
-              <FeriadosSection/>
+
             </div>
           </div>
         </div>
