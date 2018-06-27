@@ -3,20 +3,13 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
 import Dashboard from "@material-ui/icons/Dashboard";
-import Schedule from "@material-ui/icons/Schedule";
-import List from "@material-ui/icons/List";
 // core components
 import Small from "components/Typography/Small.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import InfoArea from "components/InfoArea/InfoArea.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
 
-import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 import typographyStyle from "assets/jss/material-kit-react/views/componentsSections/typographyStyle.jsx";
 
 class CurriculumSection extends React.Component {
@@ -25,18 +18,16 @@ class CurriculumSection extends React.Component {
     return (
       <div className={classes.section}>
         <div className={classes.container}>
+          <div className={classes.title}>
+          <h2> Curriculum Vitae</h2>
+          </div>
           <GridContainer justify="center">
-            <GridItem xs={10} sm={10} md={8}>
-              <div className={classes.typo}>
-                <h2> Curriculum Vitae</h2>
-              </div>
-            </GridItem>
-            <GridItem xs={10} sm={10} md={8}>
+            <GridItem xs={12} sm={12} md={8}>
               <NavPills
                 color="primary"
                 horizontal={{
-                  tabsGrid: { xs: 11, sm: 4, md: 4 },
-                  contentGrid: { xs: 11, sm: 8, md: 8 }
+                  tabsGrid: { xs: 12, sm: 4, md: 4 },
+                  contentGrid: { xs: 10, sm: 8, md: 8 }
                 }}
                 tabs={[
                   {
@@ -131,14 +122,13 @@ class CurriculumSection extends React.Component {
                             Python ,
                             C++ ,
                             SQL ,
-                            JavaScript.
+                            JavaScript
                           </p>
 
                           <h3> Tecnologías.</h3>
                           <p>
-                            Flask, NodeJs, ReactJs.
+                            Flask, NodeJs, ReactJs
                           </p>
-
 
                         </div>
                       </span>
@@ -148,9 +138,6 @@ class CurriculumSection extends React.Component {
               />
             </GridItem>
           </GridContainer>
-          <div>
-
-          </div>
         </div>
       </div>
     );
