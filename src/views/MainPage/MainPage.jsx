@@ -58,7 +58,7 @@ class ProfilePage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax style={{height:'600px'}} filter image={require("assets/img/profile-bg.jpg")} />
+        <Parallax  filter image={require("assets/img/profile-bg.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div>
             <div className={classes.container}>
@@ -96,9 +96,7 @@ class ProfilePage extends React.Component {
                 </GridItem>
 
                 <CurriculumSection/>
-                <FeriadosSection/>
               </GridContainer>
-
             </div>
           </div>
         </div>
@@ -107,5 +105,6 @@ class ProfilePage extends React.Component {
     );
   }
 }
+// <FeriadosSection/>
 
 export default withStyles(profilePageStyle)(ProfilePage);
