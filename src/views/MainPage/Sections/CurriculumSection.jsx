@@ -139,6 +139,7 @@ class CurriculumSection extends React.Component {
                             Flask, NodeJs, ReactJs.
                           </p>
 
+
                         </div>
                       </span>
                     )
